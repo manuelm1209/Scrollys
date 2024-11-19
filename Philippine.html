@@ -1,0 +1,189 @@
+<!-- This is a wrapper around the scrolly in case you want to apply extra styling (see Step 6 in the help doc) -->
+<div id="my-wrapper">
+    <!--  Drop your choice of Flourish embed code - you can use either the script or iframe embed codes here -->
+    <div class="flourish-embed" data-src="story/2651561" data-url="https://flo.uri.sh/story/2651561/embed"
+        data-height="100vh">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+    </div>
+</div>
+
+<!-- Here is where you add your captions, linking them to specific slides in the story -->
+<div>
+    <p>A handful of successful companies jumpstarted the tech sector in the Philippines. Coins.ph went on to become the
+        most influential tech company in the community and Kalibbr was the first Philippine startup to be supported by
+        Y-Combinator.
+        <a href="#story/2651561/slide-1"></a>
+    </p>
+</div>
+
+<div>
+    <p>Between 2015 and 2017, the support system for founders grew with the launch of Endeavor Philippines and other
+        organizations that formalized connectivity between entrepreneurs. These included the Manila Angels Network and
+        QBO, the first private-public initiative in the Philippines to foster collaboration.
+        <a href="#story/2651561/slide-2"></a>
+    </p>
+</div>
+
+<div>
+    <p>As of 2024, the entrepreneurial ecosystem is robust with mentors, angel investors, and serial founders. Growth in
+        tech has been underpinned by widespread internet usage from a growing population. Coins.ph was acquired in 2019
+        by GoJek, marking one of the first exits in the Philippines. Growth stage capital flowed to the country, with
+        companies like GrowSari, Great Deals, and Kumu securing Series B or C rounds.
+        <a href="#story/2651561/slide-3"></a>
+    </p>
+</div>
+
+<div>
+    <p>The founders of the most influential companies in the network have now gone on to start second or third
+        companies, and their early investees are becoming investors themselves. These Multiplier Effects™ reinvest local
+        knowledge and wealth, and are prized assets in the community.
+        <a href="#story/2651561/slide-4"></a>
+    </p>
+</div>
+
+<div>
+    <p>Without the most influential companies, the ecosystem is barren. If the top seven companies and their
+        contributions had not happened, it would be equivalent to the ecosystem in 2018 — setting the growth back by six
+        years.
+        <a href="#story/2651561/slide-5"></a>
+    </p>
+</div>
+
+<div>
+    <p>Explore the Philippines tech sector and search for specific companies in the interactive network map below.
+        <a href="#story/2651561/slide-6"></a>
+        <br>
+        <span>
+            <a href="#interactive-network-map" style="margin-top: 20px;" class="button-scrolly">Jump to
+                Interactive Map</a>
+        </span>
+    </p>
+</div>
+
+
+<!-- Add the Flourish Scrolly library -->
+<script src="https://cdn.flourish.rocks/flourish-scrolly-v3.1.0.min.js" type="text/javascript"></script>
+
+<!-- Use the default template & add the following style tag -->
+<style>
+    /* At screens over 680px wide, adjust the width & position of the embed & captions to sit alongside each other */
+
+    /* Adjust these dimensions to change the width/proportion of captions vs. embed on the page  */
+    @media screen and (min-width: 680px) {
+        #my-wrapper {
+            margin-right: 35vw;
+            /* Visualization right margin position */
+            width: 60% !important;
+            /* Visualization width*/
+        }
+
+        .fl-scrolly-step {
+            margin-right: 10vw !important;
+            /* Text box right margin position - 35vw original*/
+            /* width: 50% !important; */
+            width: 25vw !important;
+            /* Text box width - 70% original*/
+            /* MANUEL CODE*/
+            border-radius: 0 !important;
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-color: black !important;
+            box-shadow: none !important;
+            line-height: 22px !important;
+            padding: 2em !important;
+            text-align: left !important;
+            font-family: "Inter", Sans-serif;
+        }
+
+        .button-scrolly {
+            background-color: #09e1cd;
+            border: 2px solid #09e1cd;
+            color: black;
+            font-weight: 500;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            font-family: "Inter", Sans-serif;
+        }
+
+        .button-scrolly:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .button-scrolly:focus {
+            color: black;
+        }
+
+        .flourish-credit {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 679px) {
+        #my-wrapper {
+            width: 100vw !important;
+            padding-top: 20vh !important;
+
+        }
+
+        .fl-scrolly-step {
+            width: 70vw !important;
+            border-radius: 0 !important;
+            border-width: 1px !important;
+            border-style: solid !important;
+            border-color: black !important;
+            box-shadow: none !important;
+            line-height: 22px !important;
+            padding: 2em !important;
+            font-family: "Inter", Sans-serif;
+        }
+
+        .button-scrolly {
+            background-color: #09e1cd;
+            border: 2px solid #09e1cd;
+            color: black;
+            font-weight: 500;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            font-family: "Inter", Sans-serif;
+        }
+
+        .button-scrolly:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .button-scrolly:focus {
+            color: black;
+        }
+
+        .flourish-credit {
+            display: none;
+        }
+    }
+</style>
+<!-- <style> /* Prevent overwriting media screen settings */
+        .fl-scrolly-step {
+          width: 70% !important;
+        }
+      </style> -->
+
+<!-- Initialize the library to turn your story into scrolly magic! -->
+<script type="text/javascript">
+    initFlourishScrolly(
+        // {offset_top: "70px",
+        // step_styles: {}}
+    );
+</script>
